@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>財團法人柏拉圖復康之家 - 官方網站</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+</head>
+<body>
+
+    <!-- 頂部導覽列 -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.jpg" alt="柏拉圖 Logo" class="header-logo">
+            柏拉圖復康之家
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">首頁</a></li>
+                <!-- 導覽列已更新為「單位簡介」 -->
+                <li><a href="about.html">單位簡介</a></li>
+                <li><a href="news.html">活動訊息</a></li>
+                <li><a href="credit.html">社會徵信</a></li>
+                <li><a href="donate.html" class="donate-btn">捐款支持</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 1. 首頁主視覺區塊 (融入主任的願景文案) -->
+    <section class="hero">
+        <h1>點亮溪北，溫暖守護</h1>
+        <p style="font-size: 20px; max-width: 700px; margin: 0 auto 40px; color: #444; font-weight: bold; line-height: 1.6;">
+            我們致力成為溪北地區重要的身心障礙照護據點，提供溫暖的照護環境與完善的支持資源，有效減輕家庭照顧壓力，成為您最堅實的後盾。
+        </p>
+        <a href="about.html" class="donate-btn" style="font-size: 18px; padding: 15px 35px;">認識柏拉圖</a>
+    </section>
+     <!-- 2. 新增：在柏拉圖，我們獲得什麼？ (價值傳遞區塊) -->
+    <section class="value-section" style="background-color: white;">
+        <h2 class="section-title">點亮笑容，看見生命的微光</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 50px; color: #666;">
+            柏拉圖復康之家不僅是一個照護空間，更是一個充滿愛與支持的大家庭。在這裡，每一位服務對象都能獲得專屬的成長與快樂。
+        </p>
+        
+        <div class="value-container">
+            <div class="value-text">
+                <h3>找回自信與人際互動</h3>
+                <p>透過團體課程與志工活動的引導，我們鼓勵住民勇敢表達自我、與同儕建立深厚的友誼。看著他們在鏡頭前自信比出「YA」的燦爛笑容，就是我們最大的成就感。我們深信，溫暖的陪伴是最好的復健良藥。</p>
+            </div>
+            <div class="value-img-box">
+                <!-- 替換為開心舉牌的大合照 -->
+                <img src="smile.jpg" alt="住民開心合照" >
+            </div>
+        </div>
+    </section>
+    <!-- 3. 服務特色區塊 (精簡文字 + 大圖片) -->
+    <section id="services">
+        <h2 class="section-title">核心專業服務</h2>
+        <div class="features-grid">
+            <!-- 服務卡片 1 -->
+            <div class="feature-card">
+                <!-- 未來可替換為機構真實的病房或交誼廳照片 -->
+                <img src="daycare.jpg" alt="住宿與生活照顧" class="feature-img">
+                <div class="feature-text">
+                    <h3>住宿與生活照顧</h3>
+                    <p>24小時全天候安全照護，搭配營養團隊調配膳食，打造如家一般的溫暖避風港。</p>
+                </div>
+            </div>
+            <!-- 服務卡片 2 -->
+            <div class="feature-card">
+                <!-- 未來可替換為課程或互動照片 -->
+                <img src="daytrain.jpg" alt="日間與自理訓練" class="feature-img">
+                <div class=
+                "feature-text">
+                    <h3>日間與自理訓練</h3>
+                    <p>規劃多元化日間課程延緩退化，透過生活技能訓練，重建服務對象的獨立與自信。</p>
+                </div>
+            </div>
+            <!-- 服務卡片 3 -->
+            <div class="feature-card">
+                <!-- 未來可替換為復健器材或治療師照片 -->
+                <img src="dayactivity.jpg" alt="復健與休閒活動" class="feature-img">
+                <div class="feature-text">
+                    <h3>復健與休閒活動</h3>
+                    <p>專業治療師介入維持身體機能，結合豐富節慶與休閒活動，全面促進身心靈健康。</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- 4. 感謝有您，愛心同行 (動態輪播版) -->
+    <section class="partner-section">
+        <h2 class="section-title">感謝有您，愛心同行</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 30px; color: #666;">
+            機構的穩定運作，仰賴社會各界善心人士與團體的無私奉獻。感謝每一位走進柏拉圖的夥伴，為住民帶來實質的物資與精神的慰藉。
+        </p>
+
+        <!-- Swiper 輪播圖容器 -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                
+                <!-- 輪播卡片 1 -->
+                <div class="swiper-slide">
+                    <div class="feature-card" style="border-bottom: none; border-top: 5px solid var(--brand-red);">
+                        <!-- 記得替換成您的真實照片 src -->
+                        <img src="th1.jpg" alt="神農社區關懷協會" class="card-img-top">
+                        <div class="text-center-box">
+                            <h3 style="font-size: 20px;">感謝善心企業贊助</h3>
+                            <p style="font-size: 15px;">感謝神農社區關懷協會長期以來的陪伴。無論是端午佳節的愛心手工粽，或是日常的物資捐贈，將在地的人情味交織成最堅固的守護網。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 輪播卡片 2 -->
+                <div class="swiper-slide">
+                    <div class="feature-card" style="border-bottom: none; border-top: 5px solid var(--brand-red);">
+                        <!-- 記得替換成您的真實照片 src -->
+                        <img src="th2.jpg" alt="志工陪伴" class="card-img-top">
+                        <div class="text-center-box">
+                            <h3 style="font-size: 20px;">感謝善心企業贊助</h3>
+                            <p style="font-size: 15px;">感謝在地企業的慷慨解囊，贊助全新的復健設備與生活物資，讓我們的服務品質能夠持續提升，造福更多身障家庭。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 輪播卡片 3 (示範新增) -->
+                <div class="swiper-slide">
+                    <div class="feature-card" style="border-bottom: none; border-top: 5px solid var(--brand-red);">
+                        <!-- 這裡您可以放第三張照片 -->
+                        <img src="th3.jpg" alt="善心企業" class="card-img-top">
+                        <div class="text-center-box">
+                            <h3 style="font-size: 20px;">感謝善心企業贊助</h3>
+                            <p style="font-size: 15px;">感謝在地企業的慷慨解囊，贊助全新的復健設備與生活物資，讓我們的服務品質能夠持續提升，造福更多身障家庭。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 如果有第 4 張、第 5 張，只要繼續複製 <div class="swiper-slide">...</div> 即可 -->
+                <div class="swiper-slide">
+                    <div class="feature-card" style="border-bottom: none; border-top: 5px solid var(--brand-red);">
+                        <!-- 這裡您可以放第三張照片 -->
+                        <img src="th4.jpg" alt="善心企業" class="card-img-top">
+                        <div class="text-center-box">
+                            <h3 style="font-size: 20px;">感謝善心企業贊助</h3>
+                            <p style="font-size: 15px;">感謝在地企業的慷慨解囊，贊助全新的復健設備與生活物資，讓我們的服務品質能夠持續提升，造福更多身障家庭。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="feature-card" style="border-bottom: none; border-top: 5px solid var(--brand-red);">
+                        <!-- 這裡您可以放第三張照片 -->
+                        <img src="th5.jpg" alt="善心企業" class="card-img-top">
+                        <div class="text-center-box">
+                            <h3 style="font-size: 20px;">感謝善心企業贊助</h3>
+                            <p style="font-size: 15px;">感謝在地企業的慷慨解囊，贊助全新的復健設備與生活物資，讓我們的服務品質能夠持續提升，造福更多身障家庭。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="feature-card" style="border-bottom: none; border-top: 5px solid var(--brand-red);">
+                        <!-- 這裡您可以放第三張照片 -->
+                        <img src="th6.jpg" alt="善心企業" class="card-img-top">
+                        <div class="text-center-box">
+                            <h3 style="font-size: 20px;">感謝善心企業贊助</h3>
+                            <p style="font-size: 15px;">感謝在地企業的慷慨解囊，贊助全新的復健設備與生活物資，讓我們的服務品質能夠持續提升，造福更多身障家庭。</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 輪播圖下方的點點指示器 -->
+            <div class="swiper-pagination"></div>
+            <!-- 新增：左右手動切換箭頭 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- 5. 最新消息與活動快報 -->
+    <section id="news" class="news-section">
+        <h2 class="section-title">最新活動與公告</h2>
+        <div class="news-grid">
+            <!-- 新聞卡片 1 -->
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80" alt="中秋節活動" class="news-img">
+                <div class="news-content">
+                    <span class="news-date">2026.09.15</span>
+                    <h3 class="news-title">月圓人團圓：中秋節家屬聯誼餐會花絮</h3>
+                    <p style="color: #666; font-size: 15px;">感謝各位家屬熱情參與今年的中秋聯誼餐會，透過志工的表演與互動遊戲，陪伴住民度過溫馨佳節...</p>
+                    <a href="news.html" class="news-link">閱讀全文 ➔</a>
+                </div>
+            </div>
+            <!-- 新聞卡片 2 -->
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80" alt="復健設備更新" class="news-img">
+                <div class="news-content">
+                    <span class="news-date">2026.08.10</span>
+                    <h3 class="news-title">感謝在地企業贊助！全新步態訓練儀啟用</h3>
+                    <p style="color: #666; font-size: 15px;">感謝善心企業的慷慨解囊，機構本月正式引進全新步態訓練設備，將大幅提升下肢復健的效率與安全性...</p>
+                    <a href="news.html" class="news-link">閱讀全文 ➔</a>
+                </div>
+            </div>
+            <!-- 新聞卡片 3 -->
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80" alt="志工招募" class="news-img">
+                <div class="news-content">
+                    <span class="news-date">2026.07.22</span>
+                    <h3 class="news-title">【志工招募】115年度陪伴志工培訓計畫</h3>
+                    <p style="color: #666; font-size: 15px;">邀請有熱忱的您加入我們的行列！無論是專長教學或單純的陪伴傾聽，您的愛心都能點亮他們的生活...</p>
+                    <a href="news.html" class="news-link">閱讀全文 ➔</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- 6. 行動呼籲與社會徵信入口 (大紅色區塊) -->
+    <section class="cta-section">
+        <h2>您的支持，是我們持續服務的動力</h2>
+        <p>每一筆捐款、每一次的關注，都能化作實質的照護資源。我們承諾每一分善款都將透明公開，妥善運用於服務對象的生活改善與醫療復健上。</p>
+        <div class="cta-buttons">
+            <a href="donate.html" class="btn-light">❤️ 立即線上捐款</a>
+            <a href="credit.html" class="btn-outline">📊 查閱財務報告與徵信</a>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>財團法人宜蘭縣私立柏拉圖復康之家 © 2026. All Rights Reserved.</p>
+        <p>立案字號：府社老障字第1100136993號</p>
+        <p>
+            機構地址：26058 宜蘭縣宜蘭市環市東路二段626號 <br>
+            連絡電話：03-9371870 | 傳真：03-9371831 <br>
+            官方粉專：<a href="http://www.facebook.com/yilan.plato" target="_blank" style="text-decoration: underline;">前往 Facebook 粉絲專頁</a>
+        </p>
+    </footer>
+
+</body>
+</html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto", 
+        centeredSlides: true, 
+        spaceBetween: 40,     
+        loop: true,           // 無限循環
+        speed: 800,           // ★ 新增：設定切換過場速度為 0.8 秒，讓滑動更平滑連續
+        autoplay: {
+            delay: 3500,      
+            disableOnInteraction: false, 
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {         // ★ 新增：啟動左右箭頭手動切換
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            768: { slidesPerView: 2.5, spaceBetween: 50 }
+        }
+    });
+</script>

@@ -318,3 +318,65 @@ footer { background: #333; color: #ddd; text-align: center; padding: 40px 5%; ma
     font-size: 16px;
     font-weight: bold;
 }
+
+
+
+/* =========================================
+   社會徵信頁面專屬樣式 (自動對齊版)
+========================================= */
+.credit-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: stretch; /* 確保所有卡片都會等高 */
+}
+.credit-card {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    transition: 0.3s;
+    /* 加入 Flexbox 讓內部元素自動對齊 */
+    display: flex;
+    flex-direction: column;
+}
+.credit-card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+.credit-card h3 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.credit-card p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 25px;
+    flex-grow: 1; /* ★關鍵魔法：文字區塊會自動伸展，把按鈕往下推 */
+}
+/* Google Drive 風格按鈕 */
+.btn-drive {
+    display: inline-block;
+    background-color: #4285F4; 
+    color: white !important;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: auto; /* ★關鍵魔法：按鈕永遠貼齊卡片底部 */
+    width: 85%; /* 讓按鈕寬度一致，看起來更整齊 */
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-drive:hover {
+    background-color: #2b6bdc;
+    transform: translateY(-2px);
+}

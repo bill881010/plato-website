@@ -19,7 +19,6 @@
             <ul>
                 <li><a href="index.html">首頁</a></li>
                 <li><a href="about.html">單位簡介</a></li>
-                <!-- 標記目前在活動訊息頁面 -->
                 <li><a href="news.html" class="active">活動訊息</a></li>
                 <li><a href="credit.html">社會徵信</a></li>
                 <li><a href="donate.html" class="donate-btn">捐款支持</a></li>
@@ -29,29 +28,51 @@
 
     <div class="page-header">
         <h1>活動訊息與最新公告</h1>
-        <p>追蹤我們的粉絲專頁，掌握機構大小事與住民溫馨點滴</p>
+        <p>精選活動花絮，與您分享機構的溫馨點滴</p>
     </div>
 
-    <!-- 內文區塊：FB 動態牆 -->
+    <!-- 內文區塊：精選貼文堆疊 -->
     <section style="padding-top: 0; padding-bottom: 60px;">
         <div class="content-box" style="max-width: 800px; text-align: center;">
             
-            <p style="font-size: 18px; color: #444; margin-bottom: 20px;">
-                💡 歡迎點擊「追蹤」或「按讚」，給予我們的服務對象更多鼓勵！
+            <p style="font-size: 18px; color: #444; margin-bottom: 40px;">
+                💡 點擊貼文右上角的 Facebook 圖示，可以看更多照片並幫我們按讚留言喔！
             </p>
 
-            <!-- 最新活動 FB 動態牆嵌入區塊 -->
-            <div style="display: flex; justify-content: center; margin: 0 auto; width: 100%; overflow: hidden;">
-                <iframe 
-                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fyilan.plato%2F&tabs=timeline&width=500&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true" 
-                    width="500" 
-                    height="700" 
-                    style="border:none; overflow:hidden; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" 
-                    scrolling="no" 
-                    frameborder="0" 
+            <!-- 貼文清單區塊：使用 Flexbox 讓貼文垂直置中排列 -->
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px;">
+                
+                <!-- 第 1 篇：最新活動 -->
+                <div style="width: 100%; max-width: 500px; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fyilan.plato%2Fposts%2Fpfbid07jR7F8CrMfxmFuKk4LBP5ZHK3AfzvjiUYiNrdEq3EzbeMv1BLEiNf1x1jeL8Gztkl&show_text=true&width=500" 
+                    width="500" height="915" style="border:none;overflow:hidden" scrolling="no" frameborder="0" 
                     allowfullscreen="true" 
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-                </iframe>
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    ></iframe>
+                </div>
+
+                <!-- 第 2 篇：精選活動 (如果您只想放一篇，可以把這段 div 整個刪除) -->
+                <div style="width: 100%; max-width: 500px; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fyilan.plato%2Fposts%2Fpfbid031jMxk1htd2p2x9jqSXSAxumiRAVWFwN87z8n9husGgguHXbeggcyvzA5ud52GLCgl&show_text=true&width=500" 
+                    width="500" height="853" style="border:none;overflow:hidden" 
+                    scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    ></iframe>
+                </div>
+                 <!-- 第 3 篇：精選活動 (如果您只想放一篇，可以把這段 div 整個刪除) -->
+                <div style="width: 100%; max-width: 500px; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fyilan.plato%2Fposts%2Fpfbid02U2ouns6wgEZThRBcSSGWrWRPpVutAJJspYKSZxenrMMxD1AxjYqs5hdK7vmyXuJHl&show_text=true&width=500" 
+                    width="500" height="800" style="border:none;overflow:hidden" 
+                    scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; 
+                    encrypted-media; picture-in-picture; web-share"
+                    ></iframe>
+                </div>    
+            </div>
+            
+            <!-- 引導前往 FB 的大按鈕 -->
+            <div style="margin-top: 60px;">
+                <a href="https://www.facebook.com/yilan.plato/" target="_blank" style="display: inline-block; background: #4267B2; color: white; padding: 14px 32px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 16px; transition: 0.3s; box-shadow: 0 4px 10px rgba(66,103,178,0.3);">
+                    前往 Facebook 觀看更多動態 ➔
+                </a>
             </div>
 
         </div>

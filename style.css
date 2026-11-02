@@ -219,3 +219,102 @@ footer { background: #333; color: #ddd; text-align: center; padding: 40px 5%; ma
         padding: 30px 20px;
     }
 }
+
+/* =========================================
+   捐款頁面專屬樣式
+========================================= */
+.donation-grid {
+    display: flex;
+    flex-direction: column; /* 強制改為上下單排排列 */
+    gap: 40px; /* 拉大兩個區塊之間的呼吸空間 */
+    margin: 30px auto 0;
+    max-width: 850px; /* 限制最大寬度，避免在電腦大螢幕上拉得太寬 */
+}
+
+/* 其他維持原本的卡片設定 */
+.donate-card {
+    background: #faf9f8;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 40px; /* 稍微加大內距，讓單排卡片更大氣 */
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+.donate-card h3 {
+    color: var(--brand-red);
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-bottom: 2px dashed #ddd;
+    padding-bottom: 15px;
+}
+/* 街口支付按鈕專屬樣式 (使用街口品牌紅) */
+.btn-jkopay {
+    display: inline-block;
+    background-color: #DF192A; 
+    color: white !important;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(223, 25, 42, 0.2);
+}
+.btn-jkopay:hover {
+    background-color: #b81422;
+    transform: translateY(-2px);
+}
+/* --- QR Code 雙格並排樣式 (空間更寬敞) --- */
+.qr-code-box {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+}
+/* --- QR Code 雙格並排樣式 (強制並排版) --- */
+.qr-flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 兩張圖中間的距離 */
+    flex-wrap: nowrap; /* ★ 關鍵：強制不換行，保證絕對左右並排 ★ */
+    margin-top: 20px;
+}
+.qr-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%; /* 稍微增加佔比，讓兩張圖更飽滿 */
+    max-width: 280px; /* ★ 將最大限制從 180px 提升到 280px ★ */
+}
+.qr-label {
+    background: var(--brand-red);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    white-space: nowrap; /* 確保標籤文字不會斷行 */
+}
+.qr-item img {
+    width: 100%; /* 圖片寬度自動填滿外框 */
+    height: auto;
+    display: block;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+.bank-info {
+    text-align: left;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.bank-info p {
+    margin-bottom: 10px;
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+}

@@ -14,7 +14,7 @@
         <a href="index.html" class="logo">
             <img src="logo.jpg" alt="柏拉圖 Logo" class="header-logo">
             柏拉圖復康之家
-        </div>
+        </a> <!-- 修正了此處原本錯誤的結尾標籤 -->
         <nav>
             <ul>
                 <li><a href="index.html">首頁</a></li>
@@ -31,27 +31,78 @@
         <h1>捐款支持，讓愛延續</h1>
     </div>
 
+    <!-- 捐款內容區塊 -->
     <section style="padding-top: 0;">
-        <div class="content-box">
-            <h3 style="margin-top: 0;">銀行匯款 / ATM 轉帳</h3>
-            <p>您的每一分善款，都將直接用於機構住民的日常照護、復健設備更新與生活品質提升。歡迎透過以下帳戶給予我們支持：</p>
-            
-            <!-- 醒目的銀行資訊區塊 -->
-            <div style="background: #fff5f5; padding: 25px; border-radius: 8px; border: 1px solid #ffdcdc; margin: 20px 0; font-size: 18px;">
-                <p><strong>銀行名稱：</strong> 上海商業儲蓄銀行 (011)</p>
-                <p><strong>戶  名：</strong> 財團法人宜蘭縣私立柏拉圖復康之家</p>
-                <p><strong>帳  號：</strong> 65102000022075</p>
+        <!-- 將內容框稍微加寬以容納左右兩欄 -->
+        <div class="content-box" style="max-width: 1000px;">
+            <p style="text-align: center; font-size: 18px; margin-bottom: 20px;">
+                您的每一分善款，都將直接用於機構住民的日常照護、復健設備更新與生活品質提升。我們提供以下兩種便利的捐款方式：
+            </p>
+
+            <div class="donation-grid">
+                
+                <!-- 左側：街口支付區塊 -->
+                <div class="donate-card">
+                    <h3>📱 街口支付 (線上捐款 / 轉帳)</h3>
+                    <p style="color: #666; font-size: 15px;">推薦使用街口支付，免手續費、快速又方便！</p>
+                    
+                    <!-- 方式一：點擊按鈕直接開啟街口公益頁面 -->
+                    <a href="https://donation-app.jkos.com/public-welfare/charity-group/detail?id=426&source=share" target="_blank" class="btn-jkopay">
+                        👉 前往街口公益捐款
+                    </a>
+
+                    <div style="margin: 20px 0; color: #ccc;">或</div>
+
+                    <!-- 方式二：掃描 QR Code 轉帳 (雙 QR Code 並排) -->
+                    <!-- 方式二：掃描 QR Code 轉帳 -->
+                    <div class="qr-code-box">
+                        <p class="qr-notice" style="margin-top: 0; color: #444; font-weight: bold; font-size: 15px;">
+                            ※ 請開啟「街口支付 APP」掃描下方條碼
+                        </p>
+                        
+                        <!-- ★ 確保這兩個 QR 項目被包在這個 qr-flex-container 裡面 ★ -->
+                        <div class="qr-flex-container">
+                            <!-- 單次捐款 -->
+                            <div class="qr-item">
+                                <span class="qr-label">單次捐款</span>
+                                <img src="qr-single.PNG" alt="單次捐款">
+                            </div>
+                            
+                            <!-- 定期定額 -->
+                            <div class="qr-item">
+                                <span class="qr-label">定期定額</span>
+                                <img src="qr-monthly.PNG" alt="定期定額">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="qr-notice">
+                        ※ 請開啟「街口支付 APP」<br>使用「掃描條碼」功能進行轉帳
+                    </p>
+                </div>
+
+                <!-- 右側：銀行匯款區塊 -->
+                <div class="donate-card">
+                    <h3>🏦 銀行匯款 / ATM 轉帳</h3>
+                    <p style="color: #666; font-size: 15px;">歡迎透過各大銀行 APP 或實體 ATM 進行轉帳。</p>
+                    
+                    <!-- 醒目的銀行資訊區塊 -->
+                    <div class="bank-info" style="background: #fff5f5; border: 1px solid #ffdcdc;">
+                        <p>🔹 <strong>銀行名稱：</strong> 上海商業儲蓄銀行 (011)</p>
+                        <p>🔹 <strong>戶  名：</strong> 財團法人宜蘭縣私立柏拉圖復康之家</p>
+                        <p>🔹 <strong>帳  號：</strong> 65102000022075</p>
+                    </div>
+                    
+                    <!-- 捐款收據說明 -->
+                    <div class="qr-notice" style="margin-top: 30px; text-align: left; background: #fff3f3; padding: 15px; border-radius: 8px; color: #d9232d;">
+                        💡 <strong>捐款收據與開立說明：</strong><br>
+                        本機構為合法立案之財團法人，您的捐款皆可依法扣抵所得稅。<br><br>
+                        匯款完成後，請來電 <strong>03-9371870</strong> 或傳真至 <strong>03-9371831</strong>，並註明您的<strong>「帳號後五碼」</strong>與<strong>「收據開立資訊（姓名、聯絡電話、收件地址）」</strong>。<br><br>
+                        ※ 我們將於核對帳務無誤後，於次月15日前寄發正式捐款收據。
+                    </div>
+                </div>
+
             </div>
-
-            <h3>線上信用卡捐款</h3>
-            <p>為了提供更便利的捐款管道，我們的線上安全加密刷卡系統正在建置中，未來您將可以直接於網站上進行單筆或定期定額捐款，敬請期待！</p>
-
-            <h3>捐款收據與開立說明</h3>
-            <p>本機構為合法立案之財團法人，您的捐款皆可依法扣抵所得稅。</p>
-            <ul style="margin-top: 10px;">
-                <li>若您透過匯款或轉帳，請於匯款後致電 <strong>03-9371870</strong>，或將收據傳真至 <strong>03-9371831</strong>，並註明您的「姓名、聯絡電話、收件地址」。</li>
-                <li>我們將於核對帳務無誤後，於次月15日前寄發正式捐款收據給您。</li>
-            </ul>
         </div>
     </section>
 

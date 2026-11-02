@@ -180,39 +180,39 @@
     </section>
 
     <!-- 5. 最新消息與活動快報 -->
-    <section id="news" class="news-section">
-        <h2 class="section-title">最新活動與公告</h2>
-        <div class="news-grid">
-            <!-- 新聞卡片 1 -->
-            <div class="news-card">
-                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80" alt="中秋節活動" class="news-img">
-                <div class="news-content">
-                    <span class="news-date">2026.09.15</span>
-                    <h3 class="news-title">月圓人團圓：中秋節家屬聯誼餐會花絮</h3>
-                    <p style="color: #666; font-size: 15px;">感謝各位家屬熱情參與今年的中秋聯誼餐會，透過志工的表演與互動遊戲，陪伴住民度過溫馨佳節...</p>
-                    <a href="news.html" class="news-link">閱讀全文 ➔</a>
-                </div>
+    <!-- 首頁：最新動態與活動區塊 -->
+    <section style="background: #faf9f8; padding: 80px 5%;">
+        <!-- 使用 Flexbox 讓圖文左右並排，手機版自動上下排列 -->
+        <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+            
+            <!-- 左側：溫暖引言與導覽 -->
+            <div style="flex: 1; min-width: 300px;">
+                <h2 style="color: var(--brand-red, #d9232d); font-size: 32px; margin-bottom: 20px; font-weight: bold;">最新動態與活動花絮</h2>
+                <p style="font-size: 18px; color: #555; line-height: 1.8; margin-bottom: 30px;">
+                    歡迎追蹤柏拉圖復康之家的 Facebook 粉絲專頁！<br><br>
+                    我們將不定期分享住民的溫馨日常、復健進度、節慶活動以及志工招募等最新資訊。您的每一個「讚」與「分享」，都是給予我們服務對象最大的支持與鼓勵。
+                </p>
+                <!-- 連結到我們剛剛做好的活動訊息專頁 -->
+                <a href="news.html" style="display: inline-block; background: #DF192A; color: white; padding: 12px 28px; border-radius: 30px; text-decoration: none; font-weight: bold; transition: 0.3s; box-shadow: 0 4px 10px rgba(223,25,42,0.2);">
+                    查看更多活動紀錄 ➔
+                </a>
             </div>
-            <!-- 新聞卡片 2 -->
-            <div class="news-card">
-                <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80" alt="復健設備更新" class="news-img">
-                <div class="news-content">
-                    <span class="news-date">2026.08.10</span>
-                    <h3 class="news-title">感謝在地企業贊助！全新步態訓練儀啟用</h3>
-                    <p style="color: #666; font-size: 15px;">感謝善心企業的慷慨解囊，機構本月正式引進全新步態訓練設備，將大幅提升下肢復健的效率與安全性...</p>
-                    <a href="news.html" class="news-link">閱讀全文 ➔</a>
-                </div>
+
+            <!-- 右側：FB 動態牆嵌入 -->
+            <div style="flex: 1; min-width: 300px; display: flex; justify-content: center; overflow: hidden;">
+                <!-- 首頁的牆高度設為 500px，看起來比例更精緻 -->
+                <iframe 
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fyilan.plato%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true" 
+                    width="500" 
+                    height="500" 
+                    style="border:none; overflow:hidden; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);" 
+                    scrolling="no" 
+                    frameborder="0" 
+                    allowfullscreen="true" 
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                </iframe>
             </div>
-            <!-- 新聞卡片 3 -->
-            <div class="news-card">
-                <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80" alt="志工招募" class="news-img">
-                <div class="news-content">
-                    <span class="news-date">2026.07.22</span>
-                    <h3 class="news-title">【志工招募】115年度陪伴志工培訓計畫</h3>
-                    <p style="color: #666; font-size: 15px;">邀請有熱忱的您加入我們的行列！無論是專長教學或單純的陪伴傾聽，您的愛心都能點亮他們的生活...</p>
-                    <a href="news.html" class="news-link">閱讀全文 ➔</a>
-                </div>
-            </div>
+
         </div>
     </section>
     
